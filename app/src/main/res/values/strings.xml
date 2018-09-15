@@ -14,5 +14,6 @@
     <string name="msg_write_external_storage_permission_rationale">This app need "Write to External Storage Permisson" in order to save the downloaded files</string>
     <string name="msg_access_location_rationale">This app need "Access Fine Location" in order to order food for you</string>
     <string name="show_app_setting">Show App Setting</string>
+    <string name="text_open_repo_in_github">Open Repo in GitHub</string>
     <!---->
 </resources>

@@ -1,5 +1,7 @@
 package half_blood_prince.androidruntimepermissionhelper;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -114,11 +116,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.menu_show_app_settings) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.menu_show_app_settings) {
             startActivity(Utils.getAppSettingsIntent(getPackageName()));
             return true;
+        } else if (itemId == R.id.menu_open_repo_in_git) {
+            openThisProjectInGithub();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openThisProjectInGithub() {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://github.com/half-blood-prince/AndroidPermissionHelper.git"));
+        if (null != intent.resolveActivity(getPackageManager()))
+            startActivity(intent);
+
     }
 }
 
