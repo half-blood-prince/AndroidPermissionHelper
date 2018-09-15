@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AndroidRuntimePermissionHelper</string>
+
+    <string name="action_request_permission">Request Permissions</string>
+
+    <string name="msg_request_permission_from_ac">Request Permission From Activity</string>
+    <string name="msg_request_permission_from_frag">Request Permission From Fragment</string>
+    <string name="header_msg_this_is_frag">This is a fragment</string>
+
+    <!---->
+    <string name="text_settings">Settings</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="text_permission_required">Permission Required</string>
+    <string name="msg_write_external_storage_permission_rationale">This app need "Write to External Storage Permisson" in order to save the downloaded files</string>
+    <string name="msg_access_location_rationale">This app need "Access Fine Location" in order to order food for you</string>
+    <string name="show_app_setting">Show App Setting</string>
+    <!---->
+</resources>
